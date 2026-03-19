@@ -1,0 +1,14 @@
+[33m63275c4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m feat: Botón de Activar Propuesta vinculado a Whatsapp
+[33m5a4af4d[m fix: Robustez contra errores de caché de Supabase theme_config
+[33mff3032f[m fix: Imagen de logistica local en Onboarding
+[33ma2fe09a[m fix: Uso de Imágenes Locales para Tarjetas de Consideraciones
+[33mc438dec[m fix: Corregido Enlace de Imágenes Rotas en ProjectDetails
+[33m13c7890[m style: Unificación de Tarjetas con Imágenes y Animación Palpitante
+[33mc8034d5[m feat: Sección Onboarding Checklist y Reordenamiento de Secciones
+[33m5146c9d[m feat: ProjectDetails con Modales y UI Administrativa Tabulada
+[33medf39f3[m fix: cargar fallback de tarjetas en state para permitir edición y borrado
+[33m4028940[m feat: Rediseño Pixel Perfect y Arrays Dinámicos para el CMS
+[33m617f0a7[m feat: CMS Avanzado Fase V con personalización de UI, Tailwind CSS variables e integración de WP
+[33mf815d08[m feat: Nuevas vistas de Estadísticas, Configuración y Edición. Soporte para parámetros Promise en Next 15
+[33me213552[m fix: Soporte para cookies asíncronas Next 15
+[33m3b42d3e[m feat: Inicialización del Generador de Propuestas (TECHNOULTRA) y CMS con arquitectura Zero Trust
