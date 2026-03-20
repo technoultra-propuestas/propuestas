@@ -18,6 +18,11 @@ export async function loginAction(formData: FormData) {
     
     redirect('/admin/proposals')
   } else {
-    return { error: 'Contraseña incorrecta' }
+    const isLoaded = !!process.env.ADMIN_PASSWORD;
+    const length = process.env.ADMIN_PASSWORD?.length || 0;
+    
+    return { 
+      error: `Contraseña incorrecta. (Diagnóstico Vercel: Configurada=${isLoaded ? 'SÍ' : 'NO'}, Largo=${length})` 
+    }
   }
 }
