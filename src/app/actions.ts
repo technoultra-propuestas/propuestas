@@ -4,11 +4,12 @@ import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
 export async function loginAction(formData: FormData) {
-  const password = formData.get('password')
+  const password = formData.get('password') as string;
+  const envPassword = process.env.ADMIN_PASSWORD as string;
   
-  if (password === process.env.ADMIN_PASSWORD) {
+  if (password?.trim() === envPassword?.trim()) {
     const cookieStore = await cookies()
-    cookieStore.set('admin_token', password as string, {
+    cookieStore.set('admin_token', password.trim(), {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
